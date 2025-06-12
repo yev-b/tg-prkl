@@ -188,7 +188,7 @@
 
  
     <!-- Telegram Mockup Section -->
-     <!--      <div class="redir" style="cursor: pointer;">
+    <div class="redir" style="cursor: pointer;">
   <div class="iphone-wrapper">
     <!-- Екран зі скролом -->
  <!--        <div class="iphone-inner">
