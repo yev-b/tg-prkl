@@ -275,7 +275,7 @@
     };
 
     navigator.sendBeacon
-      ? navigator.sendBeacon('https://pragency.fun/send_event.php', JSON.stringify(payload))
+      ? navigator.sendBeacon('https://tg-prkl.onrender.com/send_event.php', JSON.stringify(payload))
       : fetch('https://pragency.fun/send_event.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
