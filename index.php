@@ -10,7 +10,7 @@
     
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prestige Agency</title>
+  <title>YMS</title>
   <link rel="stylesheet" href="tg-style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
   <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
@@ -170,21 +170,18 @@
         </a>
           </div>
 
-          <div class="title">Prestige Agency</div>
+          <div class="title">Yevhenii Buryk</div>
           <div class="members">9 301 підписників</div>
           <div class="description">
-            Хочеш подорожувати, заробляти $3000+ і бути незалежною?
-Тут ти отримаєш - інструкції, шаблони, підтримку.
-БЕЗКОШТОВНО! БЕЗПЕЧНО! ЧІТКО!
-Приєднуйся вже зараз до нашої спільноти!
+            Хочеш щоб твій бізнес зростав? Досить думати, настав час діяти. Напиши Yevhenii Buryk і почни зростати вже завтра. Поки інші думають ти вже дієш📈
           </div>
           <div class="emojis">👇👇👇</div>
         </div>
         <div class="buttons">
-          <a href="#" class="blue redir">ПІДПИСАТИСЬ НА КАНАЛ</a>
+          <a href="#" class="blue redir">Написати</a>
         </div>
         <p class="footer-note">
-          Вас запрошено в канал Prestige Agency. Натисніть вище, щоб приєднатися.
+          Ви можете написати Yevhenii Buryk та закрити питання з маркетингу
         </p>
       </div>
     </div>
@@ -203,7 +200,7 @@
     <img src="images/telegram_scroll_mock_v2.webp" alt="iPhone Mockup" class="iphone-image" />
 
     <!-- Кнопка внизу білого блоку -->
-    <a href="#" class="tg-phone-button redir">ПІДПИСАТИСЬ</a>
+    <a href="#" class="tg-phone-button redir">Написати</a>
   </div>
 </div>
 
