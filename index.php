@@ -186,16 +186,17 @@
       </div>
     </div>
 
+ 
     <!-- Telegram Mockup Section -->
-<div class="redir" style="cursor: pointer;">
+     <!--      <div class="redir" style="cursor: pointer;">
   <div class="iphone-wrapper">
     <!-- Екран зі скролом -->
-    <div class="iphone-inner">
+ <!--        <div class="iphone-inner">
       <div class="scroll-inside">
         <img src="images/telegram_scroll_mock.webp" alt="Telegram content" />
       </div>
     </div>
-
+-->
     <!-- Мокап айфона як зображення -->
     <img src="images/telegram_scroll_mock_v2.webp" alt="iPhone Mockup" class="iphone-image" />
 
