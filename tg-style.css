@@ -50,7 +50,7 @@ html, body {
 }
 
 .tg-download-btn {
-  background-color: #ff00ff;
+  background-color: #229ED9;
   color: #fff;
   font-weight: 600;
   font-size: 12px;
@@ -147,7 +147,7 @@ html, body {
 .title {
   font-size: 24px;
   font-weight: bold;
-  color: #ff00ff;
+  color: #ffffff;
   text-align: center;
   animation: glowPulse 2.5s infinite ease-in-out;
   margin-top: -4px;
