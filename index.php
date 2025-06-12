@@ -41,112 +41,112 @@
   <style>
   /* 🧱 Основний контейнер, що обгортає мокап iPhone + контент + кнопку */
   .iphone-wrapper {
-    position: relative;          /* Дозволяє розміщувати внутрішні елементи абсолютно */
-    width: 400px;                /* Ширина мокапу */
-    margin: 0 auto;              /* Центрування по горизонталі */
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
   }
 
   /* 📲 Мокап айфона (рамка з вирізом) */
   .iphone-image {
-    width: 100%;                 /* Розтягується на весь контейнер */
-    display: block;              /* Прибирає відступи під зображенням */
+    width: 100%;
+    display: block;
   }
 
   /* 📜 Область для скролюваного Telegram-контенту */
   .iphone-inner {
     position: absolute;
-    top: 145px;                  /* Відступ від верхнього краю .iphone-wrapper до початку екрану */
-    left: 30px;                  /* Зсув вправо всередину екрану */
-    width: 343px;                /* Ширина області скролу (по екрану мокапа) */
-    height: 594px;               /* Висота "екрану" (до білого блоку) */
-    overflow-y: auto;           /* Увімкнення вертикального скролу */
-    z-index: 2;                  /* Поверх мокапу */
-    border-radius: 0px;         /* Заокруглення кутів */
+    top: 145px;
+    left: 30px;
+    width: 343px;
+    height: 594px;
+    overflow-y: auto;
+    z-index: 2;
+    border-radius: 0px;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
   }
+
   /* Chrome, Safari, Edge */
-.iphone-inner::-webkit-scrollbar {
-  width: 4px; /* тоненька смужка */
-}
+  .iphone-inner::-webkit-scrollbar {
+    width: 4px;
+  }
 
-.iphone-inner::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.15); /* напівпрозорий колір скролу */
-  border-radius: 10px;                   /* плавність */
-}
+  .iphone-inner::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
 
-.iphone-inner::-webkit-scrollbar-track {
-  background: transparent; /* трек під скролом прозорий */
-}
+  .iphone-inner::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-/* Firefox */
-.iphone-inner {
-  scrollbar-width: thin;                       /* вужчий скрол у Firefox */
-  scrollbar-color: rgba(0, 0, 0, 0.15) transparent; /* скрол і трек */
-}
-
-
-  /* 🖼 Картинка всередині скролу — телеграм пости */
+  /* 🖼 Зображення всередині мокапа */
   .iphone-inner img {
     width: 80%;
     display: block;
-    pointer-events: none;        /* Щоб не клікалося та не виділялося */
+    pointer-events: none;
   }
 
-  /* 🔘 Кнопка "ПІДПИСАТИСЬ" — в білому блоці мокапа */
+  /* 🔘 Кнопка "ПІДПИСАТИСЬ" */
   .tg-phone-button {
     position: absolute;
-    bottom: 50px;                /* Відступ від низу мокапу (налаштовується для посадки по центру білого фону) */
+    bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);/* Центрування по горизонталі */
-    background: transparent;     /* Прозоре тло */
-    color: #c00;                 /* Червоний текст */
+    transform: translateX(-50%);
+    background: transparent;
+    color: #c00;
     font-weight: bold;
     font-size: 16px;
     border: none;
     padding: 0;
     text-transform: uppercase;
-    z-index: 3;                  /* Поверх мокапу */
+    z-index: 3;
     animation: pulse 1.5s infinite ease-in-out;
     text-decoration: none;
   }
 
-  /* 🖱️ Ефект при наведенні */
   .tg-phone-button:hover {
     text-decoration: underline;
   }
 
-  /* 📱 Адаптація для мобілок */
+  /* 📱 Мобільна адаптація */
   @media screen and (max-width: 480px) {
     .iphone-wrapper {
-      width: 320px;             /* Зменшений розмір для маленьких екранів */
+      width: 320px;
     }
 
     .iphone-inner {
-      top: 116px;       /* нижче або вище — залежить від мокапа */
-      left: 25px;       /* менше значення — ближче до лівого краю */
-      width: 280px;     /* вже ніж на десктопі */
-      height: 474px;     /* нижче — більше видно, менше — менше видно */
+      top: 116px;
+      left: 25px;
+      width: 280px;
+      height: 474px;
     }
 
     .tg-phone-button {
       bottom: 38px;
       font-size: 14px;
     }
-  
+  }
+
+  /* ✅ Анімація пульсації (виносимо поза @media!) */
   @keyframes pulse {
-  0% {
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
+    0% {
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.07);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
   }
-  50% {
-    transform: translateX(-50%) scale(1.07);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
-  }
-}
 </style>
+
 </head>
 
 <body>
