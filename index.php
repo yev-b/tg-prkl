@@ -4,7 +4,7 @@
     
     <script>
     function openTelegram() {
-      window.location.href = "tg://join?invite=w8iRB0RHAbMzYmZi";
+      window.location.href = "https://tg-prkl.onrender.com/go.php";
     }
   </script>
     
