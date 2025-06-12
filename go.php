@@ -1,6 +1,6 @@
 <?php
 // Telegram інвайт-лінк
-$tg_link = 'tg://join?invite=6B1_vm8h-Fo1Y2Fi';
+$tg_link = 'tg://resolve?domain=yev_bk';
 
 // Заголовки для 302 редіректу
 header("HTTP/1.1 302 Found");
